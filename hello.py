@@ -159,6 +159,15 @@ for y in shoppingList:
 for z in [10,201,20,50]:
 	print z
 
+# Functions: Block of reusable code defined using keyword def
+def sum(arg1, arg2):
+	total = arg1 +arg2
+	print "Sum of ", arg1, ' + ', arg2, ' = ', total
+	return 
+
+# Calling the function with paramenters
+sum(10,50)
+
 
 
 
