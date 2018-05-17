@@ -1,4 +1,3 @@
-
 '''
 This is a tutorial for python 101
 For more pratice go to codeacademy
@@ -132,7 +131,7 @@ print 'Values ', student_details.values()
 print 'Has key course?  ',student_details.has_key('course') 
 print 'Has key unit?  ',student_details.has_key('unit') 
 
-# looping  (ignore for now)
+# looping 
 for key in student_details:
 	print key
 
@@ -159,14 +158,16 @@ for y in shoppingList:
 for z in [10,201,20,50]:
 	print z
 
-# Functions: Block of reusable code defined using keyword def
+# Functions: Block of reusable code defined using keyword def. Note the indentation after colon :
 def sum(arg1, arg2):
-	total = arg1 +arg2
+	total = arg1 + arg2
 	print "Sum of ", arg1, ' + ', arg2, ' = ', total
 	return 
 
-# Calling the function with paramenters
+# Calling the function with paramenters/arguments
 sum(10,50)
+
+
 
 
 

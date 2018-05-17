@@ -1,52 +1,40 @@
-# Name:
-# Section:
-# homework_2.py
+## Defining a function
+"""Transform your rock paper scissors program to a function """
 
-##### Template for Homework 2, exercises 3.1-3.4  ######
+# Math module
+"""A module is a Python file with a collection of related functions. To use the module, you need to add the following line at the top of your
+program, right underneath the comments with your name:
+"""
+import math
 
+# print dir(math) # To see the functions in the math module
 
-# **********  Exercise 3.1 ********** 
-
-# Define your rock paper scissors function here
-##### YOUR CODE HERE #####
-
-# Test Cases for Exercise 3.1
-##### YOUR CODE HERE #####
-
-# *********** Exercise 3.2 ***********
-## 1 - multadd function
-##### YOUR CODE HERE #####
-
-## 2 - Equations
-
-# angle_test = ##### YOUR CODE HERE #####
-# print "sin(pi/4) + cos(pi/4)/2 is:"
-# print angle_test
-
-# ceiling_test = ##### YOUR CODE HERE #####
-# print "ceiling(276/19) + 2 log_7(12) is:"
-# print ceiling_test
-
-## 3 - yikes function
-##### YOUR CODE HERE #####
+print 'Factorial', math.factorial(12)
+print 'Squaroot', math.sqrt(49)
 
 
-# Test Cases
-# x = 5
-# print "yikes(5) =", yikes(x)
+## Random module
+import random
+print random.randint(1, 100) # prints a random number btw 1 and 100
 
-# ********** Exercise 3.3 **********
+# To print 10 random numbers btw 1 and 100
+print "10 random numbers btw 1 and 100"
+for x in range(10):
+	print random.randint(1,100)
 
-## 1 - rand_divis_3 function
-##### YOUR CODE HERE #####
+# To print random multiple of 5 btw 1 and 100
+print "random multiple of 5 btw 1 and 100"
+for y in range(10):
+	print random.randint(1,20)*5
 
-# Test Cases
-##### YOUR CODE HERE #####
+#randrange : randrange ([start,] stop [,step])
+# Select an even number in 10 <= number < 100
+print "randrange(10, 100, 2) : ", random.randrange(10, 100, 2)
 
-## 2 - roll_dice function - remember that a die's lowest number is 1;
-                            #its highest is the number of sides it has
-##### YOUR CODE HERE #####
+#Game of roll a dice
+def roll_dice(sides, rolls):
+	for x in range(rolls):
+		roll_value = random.randint(1, sides)
+		return roll_value
 
-# Test Cases
-##### YOUR CODE HERE #####                            
-
+print "roll the dice", roll_dice(4, 3)
