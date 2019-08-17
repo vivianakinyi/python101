@@ -1,6 +1,5 @@
 '''
 This is a tutorial for python 101
-For more pratice go to codeacademy
 '''
 print "Hello world"
 
